@@ -74,6 +74,6 @@ Additional libraries may be required based on the notebooks. Refer to the respec
 This repository:
 - Recreates results from research papers for validation.
 - Adds original experiments and improvements, particularly with MNIST and EfficientKAN.
-- Includes code adapted from the original [pykan GitHub repository]([https://github.com/pykan](https://github.com/KindXiaoming/pykan/tree/master)).
+- Includes code adapted from the original [pykan GitHub repository](https://github.com/KindXiaoming/pykan/tree/master).
 
 For questions or feedback, feel free to open an issue in the repository. Contributions are welcome!
