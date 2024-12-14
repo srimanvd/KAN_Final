@@ -11,7 +11,7 @@ This repository contains multiple Jupyter notebooks recreating results from key 
   - A toy dataset is created using a simple 2-variable equation: `x * y`.
   - The results closely match the interpretability results presented in the referenced paper.
 
-### 2. `continual_learning.ipynb`
+### 2. `continualLearning.ipynb`
 - **Purpose:** Recreates results from the KAN paper on continual learning.
 - **Description:**
   - This notebook highlights the limitations of standard Multi-Layer Perceptrons (MLPs), which forget previously learned data and cannot learn continuously.
@@ -50,8 +50,3 @@ Additional libraries may be required based on the notebooks. Refer to the respec
 
 ## Usage
 Each notebook is standalone and can be executed independently. Ensure that the necessary datasets and dependencies are available.
-
-### Example Execution
-Open any notebook using Jupyter and run the cells sequentially. For example:
-```bash
-jupyter notebook Interpretability(XY).ipynb
