@@ -37,6 +37,22 @@ This repository contains multiple Jupyter notebooks recreating results from key 
 - **Description:**
   - The results from this notebook are consistent with those reported in the paper, validating the robustness of KAN in GRID-based experiments.
 
+## Modifications and Improvements
+This repository includes additional changes and improvements beyond what was originally presented in the referenced papers:
+
+### EfficientKAN
+- Utilized EfficientKAN for training and testing on the MNIST dataset, which optimizes the performance and resource utilization of the KAN model.
+
+### Optimizer Change
+- Replaced the standard optimizer with `AdamW` in `kanMNIST.ipynb` to achieve better convergence during training.
+
+### Early Stopping
+- Introduced early stopping in `kanMNIST.ipynb` to prevent overfitting and reduce unnecessary training epochs.
+
+### Experiment Expansion
+- Applied the KAN framework to the MNIST dataset, which was not included in the original KAN paper.
+- Added a comparison experiment using MLP (`mlpMNIST.ipynb`) under the same conditions as the KAN experiments to evaluate performance differences.
+
 ## Requirements
 To run the notebooks in this repository, the following dependencies are required:
 - Python (>=3.8)
@@ -48,5 +64,16 @@ To run the notebooks in this repository, the following dependencies are required
 
 Additional libraries may be required based on the notebooks. Refer to the respective notebooks for their import statements.
 
-## Usage
-Each notebook is standalone and can be executed independently. Ensure that the necessary datasets and dependencies are available.
+## Results Summary
+- **Interpretability:** Demonstrates how models can derive interpretable equations like `x * y` from data.
+- **Continual Learning:** Highlights the limitations of MLPs in continual learning and showcases the effectiveness of KAN.
+- **MNIST Experiments:** Provides a detailed comparison between EfficientKAN and MLP on MNIST, with additional tweaks like optimizer changes and early stopping.
+- **GRID Experiment:** Validates KAN’s performance in GRID-based tasks.
+
+## Contributions
+This repository:
+- Recreates results from research papers for validation.
+- Adds original experiments and improvements, particularly with MNIST and EfficientKAN.
+- Includes code adapted from the original [pykan GitHub repository]([https://github.com/pykan](https://github.com/KindXiaoming/pykan/tree/master)).
+
+For questions or feedback, feel free to open an issue in the repository. Contributions are welcome!
